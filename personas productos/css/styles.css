@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+.crud {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Ancho ajustado para dos columnas */
+    margin-bottom: 20px;
+}
+
+/* Añadimos estilos específicos para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, button {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.formulario__grupo {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formulario__label {
+    position: absolute;
+    top: -10px; /* Ajuste para alinear mejor con el campo */
+    left: 10px;
+    font-size: 16px;
+    color: #333;
+    pointer-events: none;
+    background-color: #fff;
+    padding: 0 5px; /* Añadido padding para separar del campo */
+    transition: .3s ease all;
+}
+
+.formulario__input {
+    width: calc(100% - 20px); /* Ajuste del ancho para dejar espacio al label */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.formulario__input-error {
+    font-size: 14px;
+    color: #d9534f;
+    display: none;
+}
+
+.formulario__mensaje {
+    font-size: 16px;
+    color: #d9534f;
+    display: none;
+}
+
+.formulario__mensaje-exito {
+    font-size: 16px;
+    color: #5bc0de;
+    display: none;
+}
+
+.formulario__mensaje-activo,
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__grupo-correcto .formulario__label {
+    color: #5cb85c;
+}
+/* Añadir estilos a los iconos en los formularios */
+.formulario__grupo .formulario__validacion-icono {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: #000000; /* Color por defecto, puedes cambiarlo según tu diseño */
+}
+
+/* Estilos específicos para los iconos en la lista de personas y productos */
+.crud a i {
+    font-size: 25px;
+    margin-left: 5px;
+    color: #333; /* Color por defecto, puedes cambiarlo según tu diseño */
+}
+
+/* Cambiar color de los iconos en hover */
+.crud a:hover i {
+    color: #4caf50; /* Color al hacer hover, puedes cambiarlo según tu diseño */
+}
